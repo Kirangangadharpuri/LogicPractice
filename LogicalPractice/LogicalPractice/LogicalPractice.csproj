@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC6C48F9-4B4C-42A4-AF2B-2FB75CD60696}</ProjectGuid>
+    <ProjectGuid>{19D3F967-D5BD-4B2C-9575-1DED64F4ED46}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PracticeDemo</RootNamespace>
-    <AssemblyName>PracticeDemo</AssemblyName>
+    <RootNamespace>LogicalPractice</RootNamespace>
+    <AssemblyName>LogicalPractice</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeDataType.cs" />
-    <Compile Include="DataTransfer.cs" />
-    <Compile Include="EvenOddInRange.cs" />
+    <Compile Include="AccessModifier.cs" />
+    <Compile Include="DataStructure.cs" />
+    <Compile Include="Encapsulation.cs" />
+    <Compile Include="Generic.cs" />
+    <Compile Include="InheritenceDemo.cs" />
+    <Compile Include="OOPsBasic.cs" />
+    <Compile Include="Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReverseArray.cs" />
-    <Compile Include="ReverseVariable.cs" />
-    <Compile Include="SearchArray.cs" />
-    <Compile Include="UpperCaseString.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

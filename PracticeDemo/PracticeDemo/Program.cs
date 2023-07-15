@@ -19,6 +19,7 @@ namespace PracticeDemo
                 Console.WriteLine("4- Reverse the variable of array");
                 Console.WriteLine("5- search element in array");
                 Console.WriteLine("6- Odd numbers in given range");
+                Console.WriteLine("7- Reverse the array");
                 Console.WriteLine("Choose above option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -66,9 +67,13 @@ namespace PracticeDemo
                         SearchArray searchArray = new SearchArray();
                         searchArray.SearchElement();
                         break;
-                        case 6:
+                    case 6:
                         EvenOddInRange evenOddInRange = new EvenOddInRange();
                         evenOddInRange.OddInRange();
+                        break;
+                    case 7:
+                        ReverseArray reverseArray = new ReverseArray();
+                        reverseArray.ArrayReverse();
                         break;
                 }
             }
