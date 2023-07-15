@@ -20,6 +20,10 @@ namespace PracticeDemo
                 Console.WriteLine("5- search element in array");
                 Console.WriteLine("6- Odd numbers in given range");
                 Console.WriteLine("7- Reverse the array");
+                Console.WriteLine("8 - miltiplication table");
+                Console.WriteLine("9- multiple of 3 and 5");
+                Console.WriteLine("10- Sum of digit of number");
+                Console.WriteLine("11-Reverse and Palindrome number");
                 Console.WriteLine("Choose above option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -74,6 +78,22 @@ namespace PracticeDemo
                     case 7:
                         ReverseArray reverseArray = new ReverseArray();
                         reverseArray.ArrayReverse();
+                        break;
+                    case 8:
+                        MultipleTable multipleTable = new MultipleTable();
+                        multipleTable.Table();
+                        break;
+                    case 9:
+                        Mutiple_Three_Five mutiple_Three_Five = new Mutiple_Three_Five();
+                        mutiple_Three_Five.Multiple();
+                        break;
+                    case 10:
+                        SumOfDigits sumOfDigits = new SumOfDigits();
+                        sumOfDigits.Sum();
+                        break;
+                    case 11:
+                        ReverseAndPalindrome reverseAndPalindrome = new ReverseAndPalindrome();
+                        reverseAndPalindrome.Display();
                         break;
                 }
             }

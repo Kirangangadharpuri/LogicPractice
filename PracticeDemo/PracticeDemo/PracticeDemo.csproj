@@ -46,11 +46,15 @@
     <Compile Include="ChangeDataType.cs" />
     <Compile Include="DataTransfer.cs" />
     <Compile Include="EvenOddInRange.cs" />
+    <Compile Include="MultipleTable.cs" />
+    <Compile Include="Mutiple_Three_Five.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseAndPalindrome.cs" />
     <Compile Include="ReverseArray.cs" />
     <Compile Include="ReverseVariable.cs" />
     <Compile Include="SearchArray.cs" />
+    <Compile Include="SumOfDigits.cs" />
     <Compile Include="UpperCaseString.cs" />
   </ItemGroup>
   <ItemGroup>
