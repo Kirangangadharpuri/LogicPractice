@@ -12,8 +12,10 @@ namespace PracticeDemo
         public void ArrayReverse()
         {
             int[] arr = { 1, 2, 3, 4, 5 };
+            //string[] arr1 = { "kiran", "puri" };
             int length=arr.Length-1;
             int j = 0;
+            
             Console.WriteLine("Reversing the array");
             while(j<length)
             {
@@ -29,7 +31,9 @@ namespace PracticeDemo
             }
 
             string Arraystring = string.Join(" ", arr);
-            Console.WriteLine("string array is {0}",Arraystring);
+            Console.WriteLine("reverse int array is {0}",Arraystring);
         }
+
+       
     }
 }

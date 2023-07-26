@@ -55,19 +55,22 @@ namespace PracticeDemo
 
         public void ReverseSentence()
         {
-            {
+            
                 Console.WriteLine("Enter sentence to reverse");
-                string Sentence = Console.ReadLine();
-                string[] array = Sentence.Split(' ');
-                Array.Reverse(array);
-
-                Console.WriteLine(" is Reverse Sentence");
-                for (int i = 0; i >= 0; i++)
+                string sentence = Console.ReadLine();
+                string[] array = sentence.Split(' ');
+            string reverse = " ";
+            //Array.Reverse(array);
+            int len = array.Length -1;
+                //Console.WriteLine(" is Reverse Sentence");
+                while(len>0)
                 {
-                    Console.Write(array[i] + "" + ' ');
+                      reverse=reverse + array[len];
+                     len--;
                 }
+            Console.Write(reverse);
 
-            }
+
         }
     }
 }

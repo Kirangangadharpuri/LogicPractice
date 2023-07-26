@@ -18,6 +18,8 @@ namespace PracticeDemo
             }
             List<int> myList = myArray.ToList();
             Console.WriteLine(String.Join(",", myList));
+            string str= string.Join(",", myList);
+            Console.WriteLine("string type array {0}",str);
         }
         public void Example2()
         {

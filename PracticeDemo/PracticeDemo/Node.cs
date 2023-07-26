@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace PracticeDemo
 {
-    public class ChangeDataType
+    public class Node
     {
-        public String Display1(List<int> myList)
+        public int data;
+        public Node next;
+        public Node(int data)
         {
-            String variable = String.Concat(myList);
-            return variable;
+            this.data = data;
         }
-
     }
 }

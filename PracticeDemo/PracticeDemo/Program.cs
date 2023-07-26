@@ -13,6 +13,7 @@ namespace PracticeDemo
         {
             while (true)
             {
+                FileIOProblem problem = new FileIOProblem();
                 Console.WriteLine("1-Tranfer data from array to list");
                 Console.WriteLine("2-Change datat type of list");
                 Console.WriteLine("3-Upper Case String and lower cae string");
@@ -24,6 +25,12 @@ namespace PracticeDemo
                 Console.WriteLine("9- multiple of 3 and 5");
                 Console.WriteLine("10- Sum of digit of number");
                 Console.WriteLine("11-Reverse and Palindrome number");
+                Console.WriteLine("12-Linked List");
+                Console.WriteLine("13- Opps");
+                Console.WriteLine("14-Encapsulation");
+                Console.WriteLine("15-Check file Exist or not");
+                Console.WriteLine("16-Read all lines from file");
+                Console.WriteLine("17- read all text");
                 Console.WriteLine("Choose above option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -63,8 +70,8 @@ namespace PracticeDemo
                         break;
                     case 4:
                         ReverseVariable reverseVariable = new ReverseVariable();
-                        reverseVariable.ReverseNumber();
-                        reverseVariable.ReverseString();
+                        //reverseVariable.ReverseNumber();
+                        //reverseVariable.ReverseString();
                         reverseVariable.ReverseSentence();
                         break;
                     case 5:
@@ -94,6 +101,35 @@ namespace PracticeDemo
                     case 11:
                         ReverseAndPalindrome reverseAndPalindrome = new ReverseAndPalindrome();
                         reverseAndPalindrome.Display();
+                        break;
+                    case 12:
+                        ListLinked listLinked  = new ListLinked();
+                        listLinked.InsertData(1);
+                        listLinked.InsertData(2);
+                        listLinked.InsertData(3);
+                        listLinked.InsertData(4);
+                        listLinked.InsertData(5);
+                        listLinked.InsertAtPerticularPosition(3,6);
+                        listLinked.Display();
+                        break;
+                    case 13:
+                        Display display = new Display();
+                        display.FirstName();
+                        display.LastName();
+                        display.AnimalName();
+                        break;
+                    case 14:
+                        EncapsulationDemo demo = new EncapsulationDemo();
+                        Console.WriteLine(demo.Name="Kiran");
+                        break;
+                    case 15:
+                        problem.CkeckFile();
+                        break;
+                    case 16:
+                        problem.ReadAllLines();
+                        break;
+                    case 17:
+                        problem.ReadAllText();
                         break;
                 }
             }
