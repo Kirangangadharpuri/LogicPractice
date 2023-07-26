@@ -30,6 +30,7 @@ namespace PracticeDemo
                 Console.WriteLine("14-Encapsulation");
                 Console.WriteLine("15-Check file Exist or not");
                 Console.WriteLine("16-Read all lines from file");
+                Console.WriteLine("17- read all text");
                 Console.WriteLine("Choose above option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -126,6 +127,9 @@ namespace PracticeDemo
                         break;
                     case 16:
                         problem.ReadAllLines();
+                        break;
+                    case 17:
+                        problem.ReadAllText();
                         break;
                 }
             }

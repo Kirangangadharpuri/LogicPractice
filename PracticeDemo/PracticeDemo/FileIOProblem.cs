@@ -29,7 +29,11 @@ namespace PracticeDemo
                 Console.WriteLine(Line);
             }
         }
-
+        public void ReadAllText()
+        {
+            string Lines = File.ReadAllText(path);
+            Console.WriteLine(Lines);
+        }
     }
    
 }
