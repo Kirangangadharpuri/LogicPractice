@@ -40,7 +40,37 @@ namespace PracticeDemo
             File.Copy(path, copPath);
             Console.WriteLine("File has been copied");
         }
-       
+        public void CreateDirectory()
+        {
+            //Directory.CreateDirectory("C:\\Kiran");
+            string[] array = Directory.GetFiles(@"C:\");
+            Console.WriteLine("Files in the Directory");
+            foreach (string data in array)
+            {
+                Console.WriteLine(data);
+            }
+            Console.ReadLine();
+        }
+        public void ReadFile_STreamReader()
+        {
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string reader = " ";
+                while ((reader = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(reader);
+                }
+            }
+        }
+        public void WriteFile_STreamWriter()
+        {
+            using (StreamWriter writer = File.AppendText(path))
+            {
+                writer.WriteLine("Im an Engineer");
+                writer.Close();
+                Console.WriteLine(File.ReadAllText(path));
+            }
+        }
     }
 
 }
