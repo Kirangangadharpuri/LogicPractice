@@ -21,7 +21,15 @@ namespace PracticeDemo
                 Console.WriteLine("File does not Exist");
             }
         }
-       
+        public void ReadAllLines()
+        {
+            string[] Lines = File.ReadAllLines(path);
+            foreach (string Line in Lines)
+            {
+                Console.WriteLine(Line);
+            }
+        }
+
     }
    
 }
