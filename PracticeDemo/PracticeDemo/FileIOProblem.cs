@@ -34,6 +34,13 @@ namespace PracticeDemo
             string Lines = File.ReadAllText(path);
             Console.WriteLine(Lines);
         }
+        public void CopyFile()
+        {
+            string copPath = @"C:\Users\HP\Desktop\RFP-288\Practice\LogicPractice\PracticeDemo\PracticeDemo\FileFolder\Puri.txt";
+            File.Copy(path, copPath);
+            Console.WriteLine("File has been copied");
+        }
+       
     }
-   
+
 }

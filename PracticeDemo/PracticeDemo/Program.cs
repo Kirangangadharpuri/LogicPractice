@@ -31,6 +31,9 @@ namespace PracticeDemo
                 Console.WriteLine("15-Check file Exist or not");
                 Console.WriteLine("16-Read all lines from file");
                 Console.WriteLine("17- read all text");
+                Console.WriteLine("18- Copy the existing file to new one");
+                Console.WriteLine("19- Create new DIrectory");
+                Console.WriteLine("20- read file using stream reader");
                 Console.WriteLine("Choose above option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -130,6 +133,18 @@ namespace PracticeDemo
                         break;
                     case 17:
                         problem.ReadAllText();
+                        break;
+                    case 18:
+                        problem.CopyFile();
+                        break;
+                    case 19:
+                        problem.CreateDirectory();
+                        break;
+                    case 20:
+                        problem.ReadFile_STreamReader();
+                        break;
+                        case 21:
+                        problem.WriteFile_STreamWriter();
                         break;
                 }
             }
